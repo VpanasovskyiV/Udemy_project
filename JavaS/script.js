@@ -80,7 +80,7 @@ const answers = [];
     // answers [1] = promt ('Какая у вас фамилия?', '');
     // answers [2] = promt ('Сколько вам лет?', '');
 
-console.log (typeof(answers));*/
+console.log (typeof(answers));
 
 const category = 'toys';
 
@@ -104,8 +104,24 @@ console.log(5%2); // % - это значит сколько раз число "5
 const isChecked = false,
       isClose = true;
 
-console.log(isChecked || isClose);
+console.log(isChecked || isClose);*/
 
+const numberOFilms = +prompt('Cколько фильмов вы уже посмотрели?', '');
+const personalMovieDB ={
+count: numberOFilms,
+movies: {},
+actors:{},
+genres:[""],
+privat: false
+};
 
+const a = prompt('один из последних просмотренных фильмов?',''),
+      b = prompt('На сколько вы бы его оценили?',''),
+      c = prompt('один из последних просмотренных фильмов?',''),
+      d = prompt('На сколько вы бы его оценили?','');
 
+personalMovieDB.movies [a] = b;
+personalMovieDB.movies [c] = d;
 
+console.log(personalMovieDB);
+ 
